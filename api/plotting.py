@@ -15,9 +15,9 @@ def generateImg(funcs, min, max):
     buf = io.BytesIO()
     plt.savefig(buf, format='png')
     buf.seek(0)
+    #plt.show()
     return base64.b64encode(buf.read())  
 
-    #plt.show()
 
 def addFunc(func, min, max, ax):
     x = np.arange(min, max, 0.01);
