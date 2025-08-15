@@ -1,14 +1,33 @@
 body{
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
 }
+
 h1{
     text-align: center;
 }
 
 .buttonDelete{
     color: brown;
+    height: 50%;
+    background-color: rgb(243, 243, 243);
 }
 
-.inputsMinMax{
-    background-color: aqua;
+.buttonDelete:hover{
+    color: red;
+    
+}
+.inputsMinMax p{
+  font-weight: bold;
+}
+
+#inputs{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: space-between;
+  gap: 20pt;
+  margin-top: 10px;
+    /*margin: 10px 0;*/
+  width: 100%;
 }
