@@ -8,7 +8,7 @@ document.querySelector("#btn").addEventListener('click', () => {
     idCount++;
     document.querySelector("#inputs").innerHTML += 
         `<div  id = "div${idCount}" style="display: flex">
-            <h2 id = "${idCount}">Y = </h2> 
+            <h2 id = "${idCount}">Y = &nbsp</h2> 
             <input id = "input${idCount}"></input>
             <button class="buttonDelete" onClick="deleteInput(${idCount})"id ="${idCount}">X</button> 
         </div>`

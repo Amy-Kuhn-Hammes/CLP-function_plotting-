@@ -26,8 +26,8 @@ h1{
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: space-between;
-  gap: 20pt;
-  margin-top: 10px;
+  gap: 20px;
+  margin-top: 20px;
     /*margin: 10px 0;*/
   width: 100%;
 }
