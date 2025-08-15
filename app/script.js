@@ -1,22 +1,21 @@
 let idCount = -1
-document.querySelector("#min").value = -20
-document.querySelector("#max").value = 20
+document.querySelector("#min").value = -10
+document.querySelector("#max").value = 10
 
 
 document.querySelector("#btn").addEventListener('click', () => {
     
     idCount++;
     document.querySelector("#inputs").innerHTML += 
-        `<div id = "div${idCount}" style="display: flex">
+        `<div  id = "div${idCount}" style="display: flex">
             <h2 id = "${idCount}">Y = </h2> 
             <input id = "input${idCount}"></input>
-            <button onClick="deleteInput(${idCount})"id ="${idCount}">X</button> 
+            <button class="buttonDelete" onClick="deleteInput(${idCount})"id ="${idCount}">X</button> 
         </div>`
 }) 
 
 function deleteInput(id) {
     document.querySelector("#div"+id).innerHTML = ' '
-    
 }
 
 function submitForm() {
@@ -37,8 +36,8 @@ function submitForm() {
     xhttp.open("POST", "http://127.0.0.1:5000/plot", true);
     xhttp.setRequestHeader('Content-Type', 'application/json')
     xhttp.send(JSON.stringify({
-        min: -20,
-        max: 20,
+        min: -10,
+        max: 10,
         funcs: funcArr
     }));    
 }
